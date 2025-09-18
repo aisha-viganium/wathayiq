@@ -5,26 +5,33 @@ import AnimatedSection, { fadeInRight } from "@/animation/AnimatedSection";
 export default function HeroSection() {
     return (
         <section className="relative bg-[url('/assets/images/cover.png')] bg-cover bg-center overflow-hidden">
+                                <Image
+                        src="/assets/icons/scroll-shape-container.svg"
+                        alt="Hero"
+                        width={120}
+                        height={120}
+                        className="absolute right-[2%] bottom-[6%] w-[120px] spin-slow sm:right-[3%] sm:bottom-[10%] sm:w-[170px]"
+                    />
             <div
                 className="
-    fixed z-[100] 
-    w-[100px] h-[100px] right-[-5%] bottom-[5%] 
-    sm:w-[150px] sm:h-[150px] md:right-[1.5%] md:bottom-[4%]  
-  "
+                        fixed z-[100] 
+                        w-[100px] h-[100px] right-[-4%] bottom-[5%] 
+                        sm:w-[150px] sm:h-[150px] md:right-[1.5%] md:bottom-[4%]  
+                    "
             >
                 <div
                     className="
-      relative top-[-10%] left-[-50%] w-[80px] h-[80px] group 
-      sm:w-[100px] sm:h-[100px]
-    "
+                                relative top-[-10%] left-[-50%] w-[80px] h-[80px] group 
+                                sm:w-[100px] sm:h-[100px]
+                                "
                 >
                     <div
                         className="
-        absolute right-[0%] top-[-60%] flex items-center justify-center 
-        px-2 py-1 gap-2 w-[70px] h-[28px] rounded-full bg-[#1A1A1A] 
-        sm:px-[12.7px] sm:py-[7.9px] sm:w-[90.4px] sm:h-[33.87px] sm:rounded-[24px]
-        transition-opacity duration-300 group-hover:opacity-0
-      "
+                                    absolute right-[0%] top-[-60%] flex items-center justify-center 
+                                    px-2 py-1 gap-2 w-[70px] h-[28px] rounded-full bg-[#1A1A1A] 
+                                    sm:px-[12.7px] sm:py-[7.9px] sm:w-[90.4px] sm:h-[33.87px] sm:rounded-[24px]
+                                    transition-opacity duration-300 group-hover:opacity-0
+                                "
                     >
                         <span className="font-[600] text-[10px] leading-[14px] text-[#F3F3F3] sm:text-[12.7px] sm:leading-[18px]">
                             تحدث معي
@@ -33,9 +40,9 @@ export default function HeroSection() {
 
                     <div
                         className="
-        absolute w-[45px] h-[45px] left-[20%] top-[30px] rounded-full shadow-[0_0_90px_#FF0000] 
-        sm:w-[60px] sm:h-[60px] sm:shadow-[0_0_130px_#FF0000]
-      "
+                                    absolute w-[45px] h-[45px] left-[20%] top-[30px] rounded-full shadow-[0_0_90px_#FF0000] 
+                                    sm:w-[60px] sm:h-[60px] sm:shadow-[0_0_130px_#FF0000]
+                                "
                     ></div>
 
                     <Image
@@ -83,13 +90,7 @@ export default function HeroSection() {
                         height={90}
                         className="absolute bottom-[25%] md:bottom-[10%] md:right-[25%] sm:right-unset left-[5%] md:left-unset "
                     />
-                    <Image
-                        src="/assets/icons/scroll-shape-container.svg"
-                        alt="Hero"
-                        width={120}
-                        height={120}
-                        className="absolute right-[2%] bottom-[6%] w-[120px] spin-slow sm:right-[3%] sm:bottom-[10%] sm:w-[170px]"
-                    />
+
 
 
                 </AnimatedSection>

@@ -15,9 +15,9 @@ export default function ChatPopup({bg="white",color="#1A1A1A"}) {
                 className={`
     cursor-pointer flex my-5 flex-row justify-center items-center 
     py-[14px] md:py-[17px] gap-[10px] 
-    w-[160px] md:w-[188px] h-[55px] md:h-[63px] 
+    w-[100px] md:w-[188px] h-[45px] md:h-[63px] 
     bg-${bg} border border-${bg} rounded-[16px] 
-    text-center font-bold text-[16px] md:text-[20px] leading-[26px] md:leading-[29px] 
+    text-center font-bold text-[12px] md:text-[20px] leading-[26px] md:leading-[29px] 
     text-[${color}]
     transition-all duration-300 ease-in-out
     hover:outline hover:outline-[3px] hover:outline-${bg} hover:outline-offset-4
