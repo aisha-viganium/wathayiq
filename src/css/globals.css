@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+html {
+    direction: rtl;
+}
+
+@font-face {
+    font-family: 'alfont_com_Brando';
+    src: url('../assets/fonts/alfont_com_Brando-Arabic-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-brando {
+    font-family: 'alfont_com_Brando';
+
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-primary: #BD171D;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+    font-family: 'alfont_com_Brando' !important;
+}
+
+@keyframes spin-slow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-slow {
+    animation: spin-slow 8s linear infinite;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-up {
+    animation: slide-up 1.2s ease-out forwards;
+}
+
+.clipPath-review {
+    clip-path: polygon(0 0, 0 219px, 100% 91px, 100% 219px, 100% 100%, 0 100%);
+}
+
+.clipPath-video {
+    clip-path: polygon(0 0, 100% 0, 100% 419px, 1025px 10019px, 100% 291px, 0 419px);
+}
+
+@media only screen and (max-width:900px) {
+    .clipPath-review {
+        clip-path: unset;
+    }
+
+    .clipPath-video {
+        clip-path: unset;
+    }
+}

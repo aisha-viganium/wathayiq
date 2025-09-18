@@ -1,0 +1,117 @@
+import React from "react";
+import { BlogCard } from "@/components/BlogCard";
+import AnimatedSection, { slideFromTopBounce } from "@/animation/AnimatedSection";
+
+
+export default async function Page() {
+    const blogs = [
+        {
+            id: 1,
+            name: "تطوير البرمجيات المخصصة",
+            image: "/assets/images/blog.png",
+            tags: ["تصميم مواقع", "تطوير مواقع", "تسويق الكتروني"],
+            description: "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في "
+        },
+        {
+            id: 2,
+            name: "تطوير البرمجيات المخصصة",
+            image: "/assets/images/blog.png",
+            tags: ["تصميم مواقع", "تطوير مواقع", "تسويق الكتروني"],
+            description: "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في "
+        },
+        {
+            id: 3,
+            name: "تطوير البرمجيات المخصصة",
+            image: "/assets/images/blog.png",
+            tags: ["تصميم مواقع", "تطوير مواقع", "تسويق الكتروني"],
+            description: "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في "
+        },
+        {
+            id: 4,
+            name: "تطوير البرمجيات المخصصة",
+            image: "/assets/images/blog.png",
+            tags: ["تصميم مواقع", "تطوير مواقع", "تسويق الكتروني"],
+            description: "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في "
+        },
+        {
+            id: 5,
+            name: "تطوير البرمجيات المخصصة",
+            image: "/assets/images/blog.png",
+            tags: ["تصميم مواقع", "تطوير مواقع", "تسويق الكتروني"],
+            description: "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في "
+        },
+        {
+            id: 6,
+            name: "تطوير البرمجيات المخصصة",
+            image: "/assets/images/blog.png",
+            tags: ["تصميم مواقع", "تطوير مواقع", "تسويق الكتروني"],
+            description: "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في "
+        },
+        {
+            id: 7,
+            name: "تطوير البرمجيات المخصصة",
+            image: "/assets/images/blog.png",
+            tags: ["تصميم مواقع", "تطوير مواقع", "تسويق الكتروني"],
+            description: "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في "
+        },
+        {
+            id: 8,
+            name: "تطوير البرمجيات المخصصة",
+            image: "/assets/images/blog.png",
+            tags: ["تصميم مواقع", "تطوير مواقع", "تسويق الكتروني"],
+            description: "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في "
+        },
+        {
+            id: 9,
+            name: "تطوير البرمجيات المخصصة",
+            image: "/assets/images/blog.png",
+            tags: ["تصميم مواقع", "تطوير مواقع", "تسويق الكتروني"],
+            description: "هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في "
+        },
+    ]
+
+
+
+    return (
+        <>
+            <section className="p-8 sm:p-16 bg-[#F8F8F8]">
+                <div className="container mx-auto">
+
+                        <AnimatedSection variants={slideFromTopBounce} className="border-r-[20px] border-r-[#F9C751] pr-4 mb-6">
+
+                            <p className="font-bold text-[48px] leading-[69px] text-right text-[#414141]"
+                            >
+                                المقالات
+                            </p>
+                        </AnimatedSection>
+                    <main className="mt-10">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+                            {blogs.filter(Boolean).map((blog, index) => {
+                                if (!blog) return null;
+
+                                const columns = 3;
+                                const row = Math.floor(index / columns);
+                                const col = index % columns;
+                                const customMap = [1, 2, 3];
+                                const custom = customMap[col] ?? 1;
+
+                                return (
+                                    <AnimatedSection
+                                        key={blog.id}
+                                        variants={slideFromTopBounce}
+                                        custom={custom + row * 3}
+                                    >
+                                        <BlogCard key={blog.id} blog={blog} />
+                                    </AnimatedSection>
+                                );
+                            })}
+                        </div>
+
+                    </main>
+                </div>
+
+            </section>
+
+        </>
+    );
+}
