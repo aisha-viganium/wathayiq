@@ -4,18 +4,12 @@ import HelpSection from "@/components/HelpSection";
 import Questions from "./block/Questions";
 
 
-export default async function page({
-}: {
-  }) {
-
+export default async function page() {
   return (
     <>
       <HeroSection />
       <HelpSection />
       <Questions />
-
-
-
     </>
   );
 }

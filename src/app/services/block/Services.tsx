@@ -94,7 +94,7 @@ export default function Services() {
                     </p>
                 </AnimatedSection>
 
-                <AnimatedSection variants={slideFromTopBounce} delay={0.2}>
+                <AnimatedSection variants={slideFromTopBounce}>
                     <TopFilter />
                 </AnimatedSection>
 

@@ -4,13 +4,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 export default function SidebarNavbar() {
-  const cleanPath =
-    typeof window !== "undefined"
-      ? window.location.pathname
-        .split("/")
-        .filter((part: string) => part )
-        .join("/")
-      : "";
 
   const [path, setPath] = useState("/");
   const [isOpen, setIsOpen] = useState(false);

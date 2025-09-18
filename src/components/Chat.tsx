@@ -11,12 +11,9 @@ export default function ChatCard() {
 
     const categories = ["استفسار عام", "دعم فني", "مبيعات", "مقترحات"];
 
-    function openChat(category: string) {
+    function openChat() {
         setView("chat");
-        // setMessages((m) => [
-        //   ...m,
-        //   { id: Date.now(), from: "system", text: `✅ تم اختيار الفئة: ${category}` },
-        // ]);
+
     }
 
     function sendMessage(e: React.FormEvent<HTMLFormElement>) {
@@ -79,7 +76,7 @@ export default function ChatCard() {
                             <button
                                 key={c}
                                 type="button"
-                                onClick={() => openChat(c)}
+                                onClick={() => openChat()}
                                 className="flex justify-center items-center py-1 px-3 md:px-4 gap-[6px] md:gap-[10px] w-[140px] md:w-[218px] h-[34px] bg-white rounded-[20px] font-medium text-[14px] md:text-[16px] leading-[20px] md:leading-[23px] text-[#1A1A1A]"
                             >
                                 {c}

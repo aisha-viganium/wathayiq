@@ -20,7 +20,7 @@ export default function HeroSection() {
               className="mb-6"
             >
               <h1 className="max-w-full lg:max-w-[787px] font-bold text-[32px] sm:text-[48px] lg:text-[64px] leading-[40px] sm:leading-[70px] lg:leading-[131px] text-right text-white">
-                و ببساطة نص شكلي (بمعنى أن الغاية هي{" "}
+                و ببساطة نص شكلي (بمعنى أن الغاية هي
                 <span className="text-center px-8 gap-[10px] max-w-[181px] h-[86px] bg-[#BD171D]">
                   معنا
                 </span>

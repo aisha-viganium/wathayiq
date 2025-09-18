@@ -13,7 +13,6 @@ export default function HeroSection() {
           
           <AnimatedSection
             variants={fadeInRight}
-            transition={{ duration: 0.8 }}
             className="col-span-2 flex flex-col justify-center items-start text-right order-1 lg:order-1"
           >
             <h1 className="mt-[30px] lg:mt-[50px] max-w-[1039.36px] font-bold text-3xl md:text-5xl lg:text-[70.63px] leading-tight md:leading-[60px] lg:leading-[101px] text-[#FDFFFC]">
@@ -25,7 +24,7 @@ export default function HeroSection() {
             </p>
 
             <Link href="/contact-us" className="w-full md:w-auto">
-              <button className="w-full md:w-[350px] lg:w-[693px] h-[50px] md:h-[65px] bg-[#FDFFFC] rounded-[16px] flex items-center justify-center">
+              <button className="cursor-pointer w-full md:w-[350px] lg:w-[693px] h-[50px] md:h-[65px] bg-[#FDFFFC] rounded-[16px] flex items-center justify-center">
                 <span className="font-bold text-sm md:text-lg lg:text-[20px] text-center text-[#1A1A1A]">
                   تواصل معنا
                 </span>

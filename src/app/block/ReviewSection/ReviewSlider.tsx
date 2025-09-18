@@ -7,8 +7,16 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
 import AnimatedSection, { fadeInUp } from "@/animation/AnimatedSection";
-
-export default function ReviewSlider({ reviews }: { reviews: any[] }) {
+type Review = {
+  id: number;
+  name: string,
+  email: string,
+  review: string,
+  rating: number,
+  image: string,
+  video: string
+};
+export default function ReviewSlider({ reviews }: { reviews: Review[] }) {
   return (
     <div className="relative min-h-[100vh] overflow-hidden px-2 md:px-0">
       <div className="absolute w-full min-h-[620px] left-0 bottom-0 bg-[url('/assets/images/RectangleBackground.svg')] bg-cover bg-center overflow-hidden"></div>
