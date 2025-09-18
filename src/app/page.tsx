@@ -5,11 +5,14 @@ import Services from "./block/Services";
 import ReviewSection from "./block/ReviewSection/ReviewSection";
 import HelpSection from "@/components/HelpSection";
 import HeroSection from "./block/HeroSection";
+import RobotChat from "./block/RobotChat";
+
 
 export default async function page() {
 
   return (
     <>
+    <RobotChat />
       <HeroSection />
       <StorySection />
       <HowWork />

@@ -5,62 +5,7 @@ import AnimatedSection, { fadeInRight } from "@/animation/AnimatedSection";
 export default function HeroSection() {
     return (
         <section className="relative bg-[url('/assets/images/cover.png')] bg-cover bg-center overflow-hidden">
-                                <Image
-                        src="/assets/icons/scroll-shape-container.svg"
-                        alt="Hero"
-                        width={120}
-                        height={120}
-                        className="absolute right-[2%] bottom-[6%] w-[120px] spin-slow sm:right-[3%] sm:bottom-[10%] sm:w-[170px]"
-                    />
-            <div
-                className="
-                        fixed z-[100] 
-                        w-[100px] h-[100px] right-[-4%] bottom-[5%] 
-                        sm:w-[150px] sm:h-[150px] md:right-[1.5%] md:bottom-[4%]  
-                    "
-            >
-                <div
-                    className="
-                                relative top-[-10%] left-[-50%] w-[80px] h-[80px] group 
-                                sm:w-[100px] sm:h-[100px]
-                                "
-                >
-                    <div
-                        className="
-                                    absolute right-[0%] top-[-60%] flex items-center justify-center 
-                                    px-2 py-1 gap-2 w-[70px] h-[28px] rounded-full bg-[#1A1A1A] 
-                                    sm:px-[12.7px] sm:py-[7.9px] sm:w-[90.4px] sm:h-[33.87px] sm:rounded-[24px]
-                                    transition-opacity duration-300 group-hover:opacity-0
-                                "
-                    >
-                        <span className="font-[600] text-[10px] leading-[14px] text-[#F3F3F3] sm:text-[12.7px] sm:leading-[18px]">
-                            تحدث معي
-                        </span>
-                    </div>
-
-                    <div
-                        className="
-                                    absolute w-[45px] h-[45px] left-[20%] top-[30px] rounded-full shadow-[0_0_90px_#FF0000] 
-                                    sm:w-[60px] sm:h-[60px] sm:shadow-[0_0_130px_#FF0000]
-                                "
-                    ></div>
-
-                    <Image
-                        src="/assets/icons/sleepRobot.png"
-                        alt="Hero"
-                        width={80}
-                        height={80}
-                        className="absolute top-0 right-[-5%] w-[75px] h-[75px] object-contain transition-opacity duration-300 group-hover:opacity-0 sm:w-[95px] sm:h-[95px]"
-                    />
-                    <Image
-                        src="/assets/icons/head.png"
-                        alt="Hero Hover"
-                        width={80}
-                        height={80}
-                        className="absolute top-0 right-[-5%] w-[75px] h-[75px] object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:w-[95px] sm:h-[95px]"
-                    />
-                </div>
-            </div>
+    
 
             <div className="flex flex-col-reverse md:flex-col  lg:grid lg:grid-cols-3 items-center justify-around md:pr-15 mx-auto min-h-screen md:min-h-[948px] overflow-hidden h-full px-4 md:px-8 py-8 pb-0 lg:py-0">
                 <AnimatedSection
