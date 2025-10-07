@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { slideFromTopBounce } from "@/animation/AnimatedSection";
 import Button from "@/components/Button";
+import Link from "next/link";
 
 interface Package {
   id: string | number;
@@ -34,12 +35,12 @@ export default function PackageCard({
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="mx-auto flex flex-col items-center p-2 gap-[8px] h-[241px] md:h-[596px] bg-white border border-[#364244] rounded-[8px] md:rounded-[16px] max-w-[318px] md:max-w-[273px]"
+      className="mx-auto flex flex-col items-center p-2 md:p-4 gap-[8px] h-[241px] md:h-[596px] bg-white border border-[#364244] rounded-[8px] md:rounded-[16px] max-w-[318px] md:max-w-[273px]"
     >
-      <h3 className="font-saudi font-bold text-[16px] md:text-[28px] text-[#0D1B1E]">
+      <h3 className="font-saudi font-bold text-[16px] text-center md:text-[28px] text-[#0D1B1E]">
         {pkg.title}
       </h3>
-      <p className="text-[#364244] text-center text-[14px]">{pkg.description}</p>
+      <p className={`text-[#364244] text-center ${isArabic?"text-[14px]":"text-[12px]"}  md:w-[241px]`}>{pkg.description}</p>
 
       <div className="hidden md:flex flex-row justify-end items-center gap-2">
         <h5 className="font-saudi font-extrabold text-[48px] text-[#0D1B1E]">
@@ -64,12 +65,12 @@ export default function PackageCard({
           </p>
         </div>
       </div>
-
-      <Button
-        title={isArabic ? "إشتراك الباقة" : "Subscribe"}
-        className="hidden md:block w-full md:my-[32px] !h-[40px] !p-[8px]"
-      />
-
+      <Link href="#contact">
+        <Button
+          title={isArabic ? "إشتراك الباقة" : "Subscribe"}
+          className="hidden md:block !min-w-[241px] !w-[241px] md:my-[24px]  !p-[8px]"
+        />
+      </Link>
       <div className={`grid grid-cols-2 md:grid-cols-1 gap-[8px] md:gap-[16px] ${isArabic ? "ml-auto" : "mr-auto"}`}>
         {pkg.features.map((item, i) => (
           <div key={i} className="flex flex-row items-center gap-2">
@@ -80,7 +81,7 @@ export default function PackageCard({
               alt="check"
               className="w-[20px]"
             />
-            <p className={`text-[#364244] text-[10px] md:text-[12px] leading-[14px] max-w-[115px]  ${isArabic ? "text-right" : "text-left"}`}>
+            <p className={`text-[#364244] text-[10px] md:text-[12px] leading-[14px] max-w-[115px] md:max-w-none  ${isArabic ? "text-right" : "text-left"}`}>
               {item}
             </p>
           </div>

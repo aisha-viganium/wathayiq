@@ -2,7 +2,7 @@ export const packagesData = {
   ar: [
     {
       id: 1,
-      title: "إشتراك شركات",
+      title: "إشتراك فردي",
       description: "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
       price: 80,
       yearlyPrice:100,
@@ -17,7 +17,7 @@ export const packagesData = {
     },
     {
       id: 2,
-      title: "إشتراك مؤسسات",
+      title: "إشتراك شركات",
       description: "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
       price: 150,
       yearlyPrice:100,
@@ -33,7 +33,7 @@ export const packagesData = {
     },
     {
       id: 3,
-      title: "إشتراك مميز",
+      title: "شراء البرنامج",
       description: "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
       price: 300,
       yearlyPrice:100,
@@ -52,7 +52,7 @@ export const packagesData = {
   en: [
     {
       id: 1,
-      title: "Startup Plan",
+      title: "Individual Subscription",
       description: "Designed for newly launched businesses",
       price: 80,
       yearlyPrice:100,
@@ -68,7 +68,7 @@ export const packagesData = {
     },
     {
       id: 2,
-      title: "Business Plan",
+      title: "Business Subscription",
       description: "Designed for newly launched businesses",
       price: 150,
       yearlyPrice:100,
@@ -84,7 +84,7 @@ export const packagesData = {
     },
     {
       id: 3,
-      title: "Premium Plan",
+      title: "Buy the Software",
       description: "Designed for newly launched businesses",
       price: 300,
       yearlyPrice:100,

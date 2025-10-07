@@ -46,7 +46,7 @@ export default function PackagesClient({
             }}
           ></motion.div>
 
-          <div className={`flex justify-center ${isArabic?"gap-[34px] md:gap-[54px]":"gap-[35px] md:gap-[54px]"}  w-full z-20 relative`}>
+          <div className={`flex justify-center ${isArabic?"gap-[34px] md:gap-[54px]":"gap-[35px] md:gap-[38px]"}  w-full z-20 relative`}>
             <span
               className={` ${isArabic ?"text-[14px] md:text-[16px]":"text-[10px] md:text-[12px] pr-[8px]"}  font-normal  ${isArabic ? planType === "monthly" ? "text-white" : "text-[#283F3E]" : planType === "monthly" ? "text-[#283F3E]" : "text-white"
                 }`}

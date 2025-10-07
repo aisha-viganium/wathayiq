@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import Logo from "@/assets/SVG/Logo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -105,10 +106,12 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-[10px]">
             <LanguageSwitcher />
+            <Link href="#packages">
             <Button
               title={locale === "ar" ? "إشتراك الباقة" : "Subscribe"}
               className=""
             />
+            </Link>
           </div>
 
           <div className="lg:hidden flex items-center">
