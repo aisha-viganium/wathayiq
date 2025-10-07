@@ -34,7 +34,7 @@ export default function FAQ({ t }: { t: (key: string) => string }) {
                     {t("FAQ.description")}
                 </p>
             </AnimatedSection>
-            <div className="container mx-auto py-[16px] md:py-[32px] px-4">
+            <div className="container mx-auto py-[16px] md:py-[32px] px-2 pr-4">
                 <Accordion />
             </div>
         </section>

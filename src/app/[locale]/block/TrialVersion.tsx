@@ -18,7 +18,7 @@ export default function TrialVersion({ locale, t }: { locale: string; t: (key: s
         className="hidden md:block absolute left-0 bottom-0"
       />
 
-      <div className="container mx-auto px-4 md:px-0 md:py-[32px]">
+      <div className="container mx-auto px-4  md:py-[32px]">
         <div className="flex flex-col-reverse md:flex-col lg:grid lg:grid-cols-2 items-center justify-around gap-[40px]">
           <AnimatedSection
             variants={fadeInLeft}

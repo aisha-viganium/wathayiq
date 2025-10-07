@@ -64,22 +64,21 @@ export default function Navbar() {
   return (
     <nav
       className={`
-        flex flex-row justify-end items-center px-4 py-[10px] gap-2
+        flex flex-row justify-end items-center
+         ${locale =="ar"? "lg:pr-4" : "lg:pl-4"} 
         lg:absolute lg:left-1/2 lg:-translate-x-1/2
-        w-full lg:container min-h-[48px] lg:h-[90px]
-        bg-[#FEFFFF] lg:rounded-[16px] 
-        z-50 transition-all duration-300 shadow-md
-        ${scrolled ? "fixed top-0 lg:top-[2px]" : "lg:top-[64px]"}
+        w-full lg:container z-50
+        ${scrolled ? "fixed lg:fixed top-0 lg:top-[2px]" : "lg:top-[64px]"}
       `}
     >
-      <div className="container mx-auto px-[16px] lg:px-[24px]">
+      <div className="container mx-auto px-[16px] lg:px-[24px] transition-all duration-300 shadow-md  bg-[#FEFFFF] lg:rounded-[16px] min-h-[48px] lg:h-[90px] py-[10px] gap-2">
         <div className="flex justify-between lg:h-16 items-center">
 
           <div className="flex-shrink-0 transition-all duration-300 cursor-pointer" onClick={() => handleNavClick("#home")}>
             <Logo
               className={`${scrolled
-                  ? "w-[57px] h-fit lg:w-[100px] lg:h-[40px]"
-                  : "w-[57px] h-fit lg:w-[112px] lg:h-[57px]"
+                ? "w-[57px] h-fit lg:w-[100px] lg:h-[40px]"
+                : "w-[57px] h-fit lg:w-[112px] lg:h-[57px]"
                 } transition-all duration-300`}
             />
           </div>
@@ -90,8 +89,8 @@ export default function Navbar() {
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
                 className={`cursor-pointer text-[16px] leading-[19px] ${activeSection === link.href
-                    ? "text-[#283F3E] font-bold"
-                    : "text-[#4A4E4E] font-medium"
+                  ? "text-[#283F3E] font-bold"
+                  : "text-[#4A4E4E] font-medium"
                   }`}
                 whileHover={{
                   color: "#0D1B1E",
@@ -145,8 +144,8 @@ export default function Navbar() {
               key={link.href}
               onClick={() => handleNavClick(link.href)}
               className={`cursor-pointer text-[16px] leading-[19px] ${activeSection === link.href
-                  ? "text-[#283F3E] font-bold"
-                  : "text-[#4A4E4E] font-medium"
+                ? "text-[#283F3E] font-bold"
+                : "text-[#4A4E4E] font-medium"
                 }`}
               whileHover={{
                 color: "#0D1B1E",

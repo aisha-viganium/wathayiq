@@ -13,7 +13,7 @@ interface Props {
 
 export default function FeatureCard({ feature, }: Props) {
   return (
-    <div className="flex flex-row justify-start items-start p-4 gap-[10px] min-h-[90px] md:min-h-[165px] bg-[#283F3E]  rounded-[8px] md:rounded-[8px] group hover:bg-[#F9FCFF] hover:border-1 hover:border-[#283F3E] duration-300">
+    <div className="flex flex-row justify-start items-start p-2 gap-[8px] min-h-[90px] md:min-h-[165px] bg-[#283F3E]  rounded-[8px] md:rounded-[8px] group hover:bg-[#F9FCFF] hover:border-1 hover:border-[#283F3E] duration-300">
       <div className="flex flex-col justify-center items-center p-[7px] md:p-2.5 gap-2 w-[28px] h-[28px] md:w-[40px] md:h-[40px] bg-[#FFFFFF] rounded-[8px] md:rounded-[12px] group-hover:bg-[#283F3E]">
         <EditIcon color="#0D1B1E" className="block group-hover:hidden w-[17px] h-[17px] md:w-[24px] md:h-[24px]" />
         <EditIcon className="hidden group-hover:block w-[17px] h-[17px] md:w-[24px] md:h-[24px] text-[#0D1B1E] group-hover:text-[#FFC681] fill-current" />

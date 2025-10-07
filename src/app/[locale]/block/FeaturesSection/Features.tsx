@@ -11,7 +11,7 @@ export default function Features({ locale, t }: { locale: string; t: (key: strin
   const featureList = features[isArabic ? "ar" : "en"];
 
   return (
-    <section id="features" className="container mx-auto bg-white pt-[32px] pb-[32px] md:pb-[92px] px-4 scroll-mt-[120px]">
+    <section id="features" className={`container mx-auto bg-white pt-[32px] pb-[32px] md:pb-[92px] ${isArabic?"pr-4":"pl-4"} scroll-mt-[120px]`}>
       <AnimatedSection className="flex justify-center md:justify-between items-center">
         <Image src="/assets/icons/book.svg" alt="" width={192} height={116} className="hidden md:block w-[34px] md:w-[192px] h-fit" />
         <AnimatedSection
