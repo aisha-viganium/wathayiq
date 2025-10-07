@@ -34,7 +34,7 @@ export default function PackageCard({
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="mx-auto flex flex-col items-center p-4 gap-[8px] min-h-[241px] md:min-h-[596px] bg-white border border-[#364244] rounded-[8px] md:rounded-[16px] md:max-w-[273px]"
+      className="mx-auto flex flex-col items-center p-2 gap-[8px] h-[241px] md:h-[596px] bg-white border border-[#364244] rounded-[8px] md:rounded-[16px] max-w-[318px] md:max-w-[273px]"
     >
       <h3 className="font-saudi font-bold text-[16px] md:text-[28px] text-[#0D1B1E]">
         {pkg.title}
@@ -70,7 +70,7 @@ export default function PackageCard({
         className="hidden md:block w-full md:my-[32px] !h-[40px] !p-[8px]"
       />
 
-      <div className="grid grid-cols-2 md:grid-cols-1 gap-[8px] md:gap-[16px] ml-auto">
+      <div className={`grid grid-cols-2 md:grid-cols-1 gap-[8px] md:gap-[16px] ${isArabic?"ml-auto":"mr-auto"}`}>
         {pkg.features.map((item, i) => (
           <div key={i} className="flex flex-row items-center gap-2">
             <Image
@@ -80,17 +80,17 @@ export default function PackageCard({
               alt="check"
               className="w-[20px]"
             />
-            <p className="text-[#364244] text-[10px] md:text-[12px] leading-[14px] text-right">
+            <p className={`text-[#364244] text-[10px] md:text-[12px] leading-[14px] max-w-[115px]  ${isArabic?"text-right":"text-left"}`}>
               {item}
             </p>
           </div>
         ))}
       </div>
 
-      <div className="flex md:hidden items-center gap-[8px] w-full mt-4">
+      <div className="flex md:hidden items-center gap-[8px] w-full mt-2">
         <Button
           title={isArabic ? "إشتراك الباقة" : "Subscribe"}
-          className="!min-w-[144px] !w-[144px] text-[16px] !h-[40px] !p-[8px]"
+          className="!min-w-[144px] !w-[144px] text-[16px] !h-[35px] !p-[8px]"
         />
         <div className="flex flex-row justify-end items-center gap-2">
           <h5 className="font-saudi font-extrabold text-[32px] md:text-[48px] text-[#0D1B1E]">

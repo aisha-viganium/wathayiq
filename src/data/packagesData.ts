@@ -18,7 +18,7 @@ export const packagesData = {
     {
       id: 2,
       title: "إشتراك مؤسسات",
-      description: "مناسب للمؤسسات المتوسطة التي تحتاج إدارة موسعة",
+      description: "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
       price: 150,
       yearlyPrice:100,
 
@@ -34,7 +34,7 @@ export const packagesData = {
     {
       id: 3,
       title: "إشتراك مميز",
-      description: "للمؤسسات الكبرى التي تبحث عن أقصى مرونة وأداء",
+      description: "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
       price: 300,
       yearlyPrice:100,
 
@@ -69,7 +69,7 @@ export const packagesData = {
     {
       id: 2,
       title: "Business Plan",
-      description: "Ideal for medium-sized companies with growing needs",
+      description: "Designed for newly launched businesses",
       price: 150,
       yearlyPrice:100,
 
@@ -85,7 +85,7 @@ export const packagesData = {
     {
       id: 3,
       title: "Premium Plan",
-      description: "For enterprises that require maximum flexibility and performance",
+      description: "Designed for newly launched businesses",
       price: 300,
       yearlyPrice:100,
 

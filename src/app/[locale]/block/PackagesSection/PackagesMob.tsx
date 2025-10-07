@@ -17,7 +17,7 @@ export default function PackagesMob() {
     <Swiper
       modules={[Autoplay]}
       spaceBetween={16}
-      slidesPerView={1.1}
+      slidesPerView={1.3}
       loop
       autoplay={{ delay: 2500, disableOnInteraction: false }}
     >
