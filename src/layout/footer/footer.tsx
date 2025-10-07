@@ -1,78 +1,49 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import AnimatedSection, { deckShuffle } from "@/animation/AnimatedSection";
-
+import Link from "next/link";
+import Logo from "@/assets/SVG/Logo";
+import AnimatedSection, { fadeInUp } from "@/animation/AnimatedSection";
 export default function Footer() {
   const socialLinks = [
-    { name: "youtube", url: "https://www.snapchat.com/add/rentalgate", icon: "/assets/icons/social/youtube.svg" },
-    { name: "tiktok", url: "https://www.facebook.com/rentalgate", icon: "/assets/icons/social/tiktok.svg" },
-    { name: "facebook", url: "https://www.linkedin.com/company/rental-gate", icon: "/assets/icons/social/facebook.svg" },
-    { name: "snap", url: "https://www.linkedin.com/company/rental-gate", icon: "/assets/icons/social/snap.svg" },
-    { name: "linkedin", url: "https://www.snapchat.com/add/rentalgate", icon: "/assets/icons/social/linkedin.svg" },
+    { name: "facebook", url: "https://www.facebook.com/", icon: "/assets/icons/social/facebook.svg" },
+    { name: "Instagram", url: "https://www.Instagram.com/add/", icon: "/assets/icons/social/instagram.svg" },
+    { name: "Twitter", url: "https://www.Twitter.com/add/", icon: "/assets/icons/social/twitter.svg" },
+    { name: "WhatsApp", url: "https://www.WhatsApp.com/company/", icon: "/assets/icons/social/whatsapp.svg" },
   ];
 
-  const Companies = [
-    { name: "microsoft", icon: "/assets/icons/companies/microsoft-partner.svg" },
-    { name: "oracle", icon: "/assets/icons/companies/oracle-partner.svg" },
-    { name: "zoho", icon: "/assets/icons/companies/zoho-partner.svg" },
-  ];
+
 
   return (
-    <div className="py-16 px-5 bg-[#1A1A1A]">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start mx-auto ">
-
-        <AnimatedSection variants={deckShuffle} custom={0} className="flex flex-col items-start gap-8">
-          <h3 className="font-semibold text-2xl md:text-[40px] leading-[35px] md:leading-[57px] text-[#D9D9D9]">
-            نحن نود ان نسمع منك عن هدفك لتحقيقة
-          </h3>
-          <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">
-            انطباع عن الشكل النهائي للمحتوى. نص لوريم إيبسوم باللغة العربية مشتق من نص لاتيني كتبه الفيلسوف الروماني شيشرون وقد تم استخدامه منذ ستينيات القرن العشرين
-          </p>
-          <a
-            href="mailto:Hello@viganuim.com"
-            className="flex flex-row items-center gap-3 transition-all duration-300 hover:scale-110 hover:text-primary group"
-          >
-            <span className="font-medium text-xl md:text-[40px] text-white group-hover:text-primary transition-colors duration-300">
-              Hello@viganuim.com
-            </span>
-            <Image
-              src="/assets/icons/arrow-up.svg"
-              alt=""
-              width={30}
-              height={30}
-              className="transition-transform duration-300 group-hover:scale-110 group-hover:brightness-0 group-hover:invert"
-            />
-          </a>
-
-        </AnimatedSection>
-
-        <AnimatedSection variants={deckShuffle} custom={1} className="flex flex-col items-start gap-8">
-          <h3 className="font-semibold text-2xl md:text-[40px] text-[#D9D9D9]">صفحات التواصل الإجتماعي</h3>
-          <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">
-            انطباع عن الشكل النهائي للمحتوى. نص لوريم إيبسوم باللغة العربية مشتق من نص لاتيني كتبه الفيلسوف الروماني شيشرون وقد تم استخدامه منذ ستينيات القرن العشرين
-          </p>
-          <div className="flex flex-wrap gap-8 md:gap-16 align-baseline">
-            {socialLinks.map((link, idx) => (
-              <a href={link.url} key={idx} target="_blank" rel="noopener noreferrer">
-                <Image src={link.icon} alt={link.name} width={43} height={43} />
-              </a>
-            ))}
-          </div>
-        </AnimatedSection>
-
-        <AnimatedSection variants={deckShuffle} custom={2} className="flex flex-col items-start gap-8">
-          <h3 className="font-semibold text-2xl md:text-[40px] text-[#D9D9D9]">شركائنا في الشركات</h3>
-          <p className="text-sm md:text-[16px] leading-[22px] md:leading-[25px] text-[#D9D9D9]">
-            انطباع عن الشكل النهائي للمحتوى. نص لوريم إيبسوم باللغة العربية مشتق من نص لاتيني كتبه الفيلسوف الروماني شيشرون وقد تم استخدامه منذ ستينيات القرن العشرين
-          </p>
-          <div className="flex gap-5">
-            {Companies.map((c, idx) => (
-              <Image key={idx} src={c.icon} alt={c.name} width={77} height={77} />
-            ))}
-          </div>
-        </AnimatedSection>
+    <div className=" pt-6 px-0 pb-0 gap-10 bg-gradient-to-b from-[rgba(13,128,131,0)] from-[-8.76%] to-[#045D60] to-[73.05%]">
+           <AnimatedSection
+                variants={fadeInUp}
+                transition={{ duration: 0.8 }}>
+      <div className="flex flex-col items-center gap-4 mx-auto">
+        <Logo className={`w-[59px] md:w-[152px] h-fit transition-all duration-300`} />
+        <div className="grid grid-cols-4 gap-5 py-[8px] md:py-5 md:border-t-[0.5px] md:border-white/50">
+          {socialLinks.map((link, idx) => (
+            <a href={link.url} key={idx} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center gap-1">
+              <span className="font-inter not-italic font-normal text-[12px] md:text-[18px] leading-[150%] text-white">{link.name}</span>
+              <Image src={link.icon} alt="" width={16} height={16} className="w-[16px] h-[16px]" />
+            </a>
+          ))}
+        </div>
       </div>
+      <div dir="ltr" className=" flex flex-col md:flex-row items-center justify-center md:px-20 py-2 md:py-4 gap-2 md:gap-5  min-h-[52px] mix-blend-normal border-t border-t-[0.5px] border-white/50 rounded-none w-full">
+        <p className="font-inter not-italic font-normal text-[12px] md:text-[14px] leading-[150%] text-white">
+          ©2025 Copyright Viganium. All rights reserved.
+        </p>
+        <div className="flex gap-2 md:gap-5 ">
+          <Link href="#" className="font-inter not-italic font-normal text-[12px] md:text-[14px] leading-[150%] text-white underline ">
+            Privacy Policy
+          </Link>
+          <Link href="#" className="font-inter not-italic font-normal text-[12px] md:text-[14px] leading-[150%] text-white underline">
+            Terms of Use
+          </Link>
+        </div>
+      </div>
+      </AnimatedSection>
     </div>
   );
 }

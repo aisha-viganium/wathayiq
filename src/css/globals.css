@@ -1,33 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+
 html {
-    direction: rtl;
+  direction: rtl;
+}
+
+.font-tajawal {
+  font-family: "Tajawal", sans-serif;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'alfont_com_Brando';
-    src: url('../assets/fonts/alfont_com_Brando-Arabic-Bold.otf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'aileron_regular';
+  src: url('../assets/fonts/aileron.regular.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
 }
 
-.font-brando {
-    font-family: 'alfont_com_Brando';
-
+.font-aileron {
+  font-family: 'aileron_regular' !important;
+}
+@font-face {
+  font-family: 'SaudiWeb_Regular';
+  src: url('../assets/fonts/SaudiWeb-Regular.woff') format('opentype');
+  font-style: normal;
+  font-display: swap;
 }
 
+.font-saudi {
+  font-family: 'SaudiWeb_Regular' !important;
+}
+html[lang="en"] .font-saudi{
+    font-family: 'aileron_regular' !important;
+
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-primary: #BD171D;
-
+  --color-primary: #0D8083;
+  --color-secondry: #1A1A1A;
+  --color-secondry-200: #414141;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -40,53 +59,62 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-    font-family: 'alfont_com_Brando' !important;
+  font-family: "Tajawal", sans-serif;
+  font-style: normal;
+}
+
+html[lang="en"] body {
+  font-family: 'aileron_regular' !important;
+  direction: ltr;
 }
 
 @keyframes spin-slow {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .spin-slow {
-    animation: spin-slow 8s linear infinite;
+  animation: spin-slow 8s linear infinite;
 }
 
 @keyframes slide-up {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
 
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .slide-up {
-    animation: slide-up 1.2s ease-out forwards;
+  animation: slide-up 1.2s ease-out forwards;
 }
 
-.clipPath-review {
-    clip-path: polygon(0 0, 0 219px, 100% 91px, 100% 219px, 100% 100%, 0 100%);
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  /* thin */
 }
 
-.clipPath-video {
-    clip-path: polygon(0 0, 100% 0, 100% 419px, 1025px 10019px, 100% 291px, 0 419px);
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 9999px;
 }
 
-@media only screen and (max-width:900px) {
-    .clipPath-review {
-        clip-path: unset;
-    }
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 9999px;
+}
 
-    .clipPath-video {
-        clip-path: unset;
-    }
+
+html {
+  scroll-behavior: smooth;
 }

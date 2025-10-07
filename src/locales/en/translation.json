@@ -1,0 +1,58 @@
+{
+  "HomePage": {
+    "title": "Electronic Signature \n  Legally Binding Agreements  \n   Easily and Securely .. From Anywhere",
+    "description": "Upload .. Sign .. Share .. All your documents on an Arabic platform designed for your business in the Kingdom of Saudi Arabia.",
+    "subscribeButton": "Subscribe to the Plan",
+    "tryFreeButton": "Try 14 Days for Free",
+    "trustedPartners": "Trusted Partners"
+  },
+  "AboutPage": {
+    "title": "About Wathayiq",
+    "description": "Marafaa is an intelligent and integrated management system designed specifically to meet the needs of lawyers and small law firms in the Arab world. It provides a comprehensive digital solution for organizing cases, tracking sessions, managing tasks, and archiving legal documents, with an easy-to-use interface and a secure environment that protects data privacy.",
+    "feature": "Task Management"
+  },
+  "Services": {
+    "title": "Solutions Provided by Wathayiq"
+  },
+  "Features": {
+    "title": "Wathayiq Features",
+    "subtitle": "Upload, sign, and share — all your documents on an Arabic platform designed for your business in Saudi Arabia."
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "description": "Upload, sign, and share — all your documents on an Arabic platform designed for your business in Saudi Arabia."
+  },
+  "Packages": {
+    "title": "Wathayiq Packages",
+    "subtitle": "Upload, sign, and share — all your documents on an Arabic platform designed for your business in Saudi Arabia.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "per_user": "Per User"
+  },
+  "TrialVersion": {
+    "title": "Trial Version of Wathaeq",
+    "description": "Upload, sign, and share all your documents on an Arabic platform designed for your business in Saudi Arabia.",
+    "subTitle": "Trial Version\nLegally Binding Agreements\nEasily and Securely from Anywhere",
+    "subDescription": "Upload, sign, and share all your documents on an Arabic platform designed for your business in Saudi Arabia.",
+    "features": {
+      "1": "Task Management",
+      "2": "Secure Documents",
+      "3": "Legally Binding Signatures",
+      "4": "Easy Sharing"
+    },
+    "button": "Try 14 Days Free"
+  },
+  "ContactUs": {
+    "title": "Contact Us",
+    "subtitle": "Upload, sign, and share your documents on an Arabic platform designed for your business in Saudi Arabia.",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "name": "Name",
+    "phone": "Phone Number",
+    "company": "Company Name",
+    "emailField": "Email Address",
+    "message": "Leave a message",
+    "submit": "Send",
+    "sending": "Sending..."
+  }
+}
