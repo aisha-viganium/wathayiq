@@ -30,7 +30,7 @@ export default function PackagesClient({
     <div>
       <div className="flex justify-center mt-6">
         <div
-          className="relative w-[145px]  md:w-[172px] h-[39px] bg-[#283F3E] rounded-[4px] p-[2px] cursor-pointer flex items-center justify-between"
+          className="relative w-[145px] md:w-[172px] h-[39px] bg-[#283F3E] rounded-[4px] p-[2px] cursor-pointer flex items-center justify-between"
           onClick={handleToggle}
         >
           <motion.div
@@ -46,15 +46,15 @@ export default function PackagesClient({
             }}
           ></motion.div>
 
-          <div className="flex justify-center gap-[34px] md:gap-[54px] w-full z-20 relative">
+          <div className={`flex justify-center ${isArabic?"gap-[34px] md:gap-[54px]":"gap-[15px] md:gap-[24px]"}  w-full z-20 relative`}>
             <span
-              className={`text-[14px] md:text-[16px] font-[Tajawal] font-normal  ${isArabic ? planType === "monthly" ? "text-white" : "text-[#283F3E]" : planType === "monthly" ? "text-[#283F3E]" : "text-white"
+              className={` ${isArabic ?"text-[14px] md:text-[16px]":"text-[10px] md:text-[12px]"}  font-normal  ${isArabic ? planType === "monthly" ? "text-white" : "text-[#283F3E]" : planType === "monthly" ? "text-[#283F3E]" : "text-white"
                 }`}
             >
               {isArabic ? "شهري" : "Monthly"}
             </span>
             <span
-              className={`text-[14px] md:text-[16px] font-[Tajawal] font-normal  ${isArabic ? planType === "yearly" ? "text-white" : "text-[#283F3E]" : planType === "yearly" ? "text-[#283F3E]" : "text-white"
+              className={` ${isArabic ?"text-[14px] md:text-[16px]":"text-[10px] md:text-[12px] md:pr-[8px]"} font-normal  ${isArabic ? planType === "yearly" ? "text-white" : "text-[#283F3E]" : planType === "yearly" ? "text-[#283F3E]" : "text-white"
                 }`}
             >
               {isArabic ? "سنوي" : "Yearly"}
@@ -76,7 +76,7 @@ export default function PackagesClient({
       </div>
 
       <div className={`md:hidden mt-8 ${isArabic ? "pr-4" : "pl-4"}`}>
-        <PackagesMob />
+        <PackagesMob   planType={planType}/>
       </div>
     </div>
   );

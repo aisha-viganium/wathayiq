@@ -7,8 +7,10 @@ import "swiper/css";
 import PackageCard from "./PackageCard";
 import { useTranslation } from "react-i18next";
 import { packagesData } from "@/data/packagesData";
-
-export default function PackagesMob() {
+interface PackagesMobProps {
+  planType?: "monthly" | "yearly"; 
+}
+export default function PackagesMob({ planType = "monthly" }: PackagesMobProps) {
   const { i18n } = useTranslation();
   const isArabic = i18n.language === "ar";
   const packageList = packagesData[isArabic ? "ar" : "en"];
@@ -23,7 +25,7 @@ export default function PackagesMob() {
     >
       {packageList.map((pkg, index) => (
         <SwiperSlide key={pkg.id}>
-          <PackageCard pkg={pkg} isArabic={isArabic} planType="monthly" index={index} />
+          <PackageCard pkg={pkg} isArabic={isArabic} planType={planType} index={index} />
         </SwiperSlide>
       ))}
     </Swiper>

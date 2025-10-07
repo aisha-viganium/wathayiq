@@ -70,7 +70,7 @@ export default function PackageCard({
         className="hidden md:block w-full md:my-[32px] !h-[40px] !p-[8px]"
       />
 
-      <div className={`grid grid-cols-2 md:grid-cols-1 gap-[8px] md:gap-[16px] ${isArabic?"ml-auto":"mr-auto"}`}>
+      <div className={`grid grid-cols-2 md:grid-cols-1 gap-[8px] md:gap-[16px] ${isArabic ? "ml-auto" : "mr-auto"}`}>
         {pkg.features.map((item, i) => (
           <div key={i} className="flex flex-row items-center gap-2">
             <Image
@@ -80,7 +80,7 @@ export default function PackageCard({
               alt="check"
               className="w-[20px]"
             />
-            <p className={`text-[#364244] text-[10px] md:text-[12px] leading-[14px] max-w-[115px]  ${isArabic?"text-right":"text-left"}`}>
+            <p className={`text-[#364244] text-[10px] md:text-[12px] leading-[14px] max-w-[115px]  ${isArabic ? "text-right" : "text-left"}`}>
               {item}
             </p>
           </div>
