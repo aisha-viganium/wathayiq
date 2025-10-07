@@ -11,6 +11,7 @@ interface Package {
   price: number | string;
   yearlyPrice: number | string;
   features: string[];
+  buttonText: string;
 }
 
 export default function PackagesClient({
@@ -46,15 +47,15 @@ export default function PackagesClient({
             }}
           ></motion.div>
 
-          <div className={`flex justify-center ${isArabic?"gap-[34px] md:gap-[54px]":"gap-[35px] md:gap-[38px]"}  w-full z-20 relative`}>
+          <div className={`flex justify-center ${isArabic ? "gap-[34px] md:gap-[54px]" : "gap-[35px] md:gap-[38px]"}  w-full z-20 relative`}>
             <span
-              className={` ${isArabic ?"text-[14px] md:text-[16px]":"text-[10px] md:text-[12px] pr-[8px]"}  font-normal  ${isArabic ? planType === "monthly" ? "text-white" : "text-[#283F3E]" : planType === "monthly" ? "text-[#283F3E]" : "text-white"
+              className={` ${isArabic ? "text-[14px] md:text-[16px]" : "text-[10px] md:text-[12px] pr-[8px]"}  font-normal  ${isArabic ? planType === "monthly" ? "text-white" : "text-[#283F3E]" : planType === "monthly" ? "text-[#283F3E]" : "text-white"
                 }`}
             >
               {isArabic ? "شهري" : "Monthly"}
             </span>
             <span
-              className={` ${isArabic ?"text-[14px] md:text-[16px]":"text-[10px] md:text-[12px] pr-[8px] md:pr-[8px]"} font-normal  ${isArabic ? planType === "yearly" ? "text-white" : "text-[#283F3E]" : planType === "yearly" ? "text-[#283F3E]" : "text-white"
+              className={` ${isArabic ? "text-[14px] md:text-[16px]" : "text-[10px] md:text-[12px] pr-[8px] md:pr-[8px]"} font-normal  ${isArabic ? planType === "yearly" ? "text-white" : "text-[#283F3E]" : planType === "yearly" ? "text-[#283F3E]" : "text-white"
                 }`}
             >
               {isArabic ? "سنوي" : "Yearly"}
@@ -76,7 +77,7 @@ export default function PackagesClient({
       </div>
 
       <div className={`md:hidden mt-8 ${isArabic ? "pr-4" : "pl-4"}`}>
-        <PackagesMob   planType={planType}/>
+        <PackagesMob planType={planType} />
       </div>
     </div>
   );

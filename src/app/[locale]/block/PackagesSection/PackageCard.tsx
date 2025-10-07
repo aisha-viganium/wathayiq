@@ -13,6 +13,7 @@ interface Package {
   price: number | string;
   yearlyPrice: number | string;
   features: string[];
+  buttonText: string;
 }
 
 interface Props {
@@ -37,10 +38,10 @@ export default function PackageCard({
       transition={{ duration: 0.4, delay: index * 0.1 }}
       className="mx-auto flex flex-col items-center p-2 md:p-4 gap-[8px] h-[241px] md:h-[596px] bg-white border border-[#364244] rounded-[8px] md:rounded-[16px] max-w-[318px] md:max-w-[273px]"
     >
-      <h3 className="font-saudi font-bold text-[16px] text-center md:text-[28px] text-[#0D1B1E]">
+      <h3 className={`font-saudi text-[16px] font-bold text-center  text-[#0D1B1E] ${isArabic ? "md:text-[28px]" : "md:text-[22px]"}`}>
         {pkg.title}
       </h3>
-      <p className={`text-[#364244] text-center ${isArabic?"text-[14px]":"text-[12px]"}  md:w-[241px]`}>{pkg.description}</p>
+      <p className={`text-[#364244] text-center ${isArabic ? "text-[14px]" : "text-[12px]"}  md:w-[241px]`}>{pkg.description}</p>
 
       <div className="hidden md:flex flex-row justify-end items-center gap-2">
         <h5 className="font-saudi font-extrabold text-[48px] text-[#0D1B1E]">
@@ -67,7 +68,7 @@ export default function PackageCard({
       </div>
       <Link href="#contact">
         <Button
-          title={isArabic ? "إشتراك الباقة" : "Subscribe"}
+          title={pkg.buttonText}
           className="hidden md:block !min-w-[241px] !w-[241px] md:my-[24px]  !p-[8px]"
         />
       </Link>
