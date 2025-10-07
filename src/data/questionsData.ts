@@ -106,19 +106,13 @@ const questions = {
             "answer": "The service is free with some additional features available in the premium plan."
         },
         {
-            id: 5,
+            id: 11,
 
             "question": "Is the service free or paid?",
             "answer": "The service is free with some additional features available in the premium plan."
         },
         {
-            id: 5,
-
-            "question": "Is the service free or paid?",
-            "answer": "The service is free with some additional features available in the premium plan."
-        },
-        {
-            id: 5,
+            id: 12,
 
             "question": "Is the service free or paid?",
             "answer": "The service is free with some additional features available in the premium plan."

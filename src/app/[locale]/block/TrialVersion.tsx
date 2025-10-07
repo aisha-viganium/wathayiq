@@ -19,11 +19,11 @@ export default function TrialVersion({ locale, t }: { locale: string; t: (key: s
       />
 
       <div className="container mx-auto px-4  md:py-[32px]">
-        <div className="flex flex-col-reverse md:flex-col lg:grid lg:grid-cols-2 items-center justify-around gap-[40px]">
+        <div className="flex flex-col-reverse md:flex-row  gap-[42px]">
           <AnimatedSection
             variants={fadeInLeft}
             transition={{ duration: 0.8 }}
-            className={`col-span-1 h-full flex flex-col gap-[16px] justify-center 
+            className={` h-full flex flex-col gap-[16px] justify-center 
               ${isArabic ? "items-start text-right" : "items-start text-left"} 
               order-2`}
           >
@@ -68,7 +68,7 @@ export default function TrialVersion({ locale, t }: { locale: string; t: (key: s
           <AnimatedSection
             variants={fadeInRight}
             transition={{ duration: 0.8 }}
-            className="col-span-1 w-full h-full md:mb-6 lg:mb-0 flex items-start justify-start order-2 md:order-1">
+            className=" h-full md:mb-6 lg:mb-0 flex items-start justify-start order-2 md:order-1">
             <Image src="/assets/images/trial-version.png" alt="" width={660} height={481} className=" object-cover w-full md:max-w-[660px] h-[262px] md:h-[481px] rounded-[16px]" />
 
           </AnimatedSection>
