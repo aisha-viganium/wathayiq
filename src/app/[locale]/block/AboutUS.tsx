@@ -76,11 +76,11 @@ export default function AboutUS({ locale, t }: { locale: string; t: (key: string
                                         <EditIcon color="#FFC681" className="w-[14px] h-[14px] md:w-[24px] md:h-[24px]" />
                                     </div>
                                     <span
-                                        className="
+                                        className={`
                                             font-medium 
-                                            text-[14px] md:text-[20px] md:leading-[24px] 
+                                            ${isArabic ? "text-[12px]" : " text-[14px]"} md:text-[20px] md:leading-[24px] 
                                             text-[#364244]
-                                        "
+                                        `}
                                     >
                                         {t("AboutPage.feature")}
                                     </span>
@@ -93,8 +93,8 @@ export default function AboutUS({ locale, t }: { locale: string; t: (key: string
                         variants={fadeInRight}
                         transition={{ duration: 0.8 }}
                         className="col-span-1 w-full h-full  flex items-start justify-start order-2 md:order-1">
-       
-                        <Image src="/assets/images/about.png" alt="" width={643} height={370} className="object-cover h-[197px] md:h-[370px] rounded-[8px] md:rounded-[16px]"/>
+
+                        <Image src="/assets/images/about.png" alt="" width={643} height={370} className="object-cover h-[197px] md:h-[370px] rounded-[8px] md:rounded-[16px]" />
 
                     </AnimatedSection>
                 </div>
