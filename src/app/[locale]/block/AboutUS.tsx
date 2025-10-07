@@ -17,7 +17,7 @@ export default function AboutUS({ locale, t }: { locale: string; t: (key: string
             />
 
             <div className="container mx-auto px-4 py-[32px]">
-                <div className="flex flex-col-reverse md:flex-col lg:grid lg:grid-cols-2 items-center justify-around gap-[32px] md:gap-[64px]">
+                <div className="flex flex-col-reverse md:flex-col lg:grid lg:grid-cols-2 items-center justify-around gap-[32px] md:gap-[42px]">
 
                     <AnimatedSection
                         variants={fadeInLeft}
