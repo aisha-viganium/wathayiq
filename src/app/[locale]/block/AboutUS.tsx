@@ -17,12 +17,12 @@ export default function AboutUS({ locale, t }: { locale: string; t: (key: string
             />
 
             <div className="container mx-auto px-4 py-[32px]">
-                <div className="flex flex-col-reverse md:flex-col lg:grid lg:grid-cols-2 items-center justify-around gap-[32px] md:gap-[42px]">
+                <div className=" flex-col-reverse md:flex-row flex items-center gap-[32px] md:gap-[42px]">
 
                     <AnimatedSection
                         variants={fadeInLeft}
                         transition={{ duration: 0.8 }}
-                        className={`col-span-1 h-full flex flex-col gap-[8px] md:gap-[16px] justify-center 
+                        className={` h-full flex flex-col gap-[8px] md:gap-[16px] justify-center 
                             ${isArabic ? "items-start text-right" : "items-start text-left"} 
                             order-2 `}
                     >
@@ -92,7 +92,7 @@ export default function AboutUS({ locale, t }: { locale: string; t: (key: string
                     <AnimatedSection
                         variants={fadeInRight}
                         transition={{ duration: 0.8 }}
-                        className="col-span-1 w-full h-full  flex items-start justify-start order-2 md:order-1">
+                        className=" w-full h-full max-w-[643px]  flex items-start justify-start order-2 md:order-1">
 
                         <Image src="/assets/images/about.png" alt="" width={643} height={370} className="object-cover h-[197px] md:h-[370px] rounded-[8px] md:rounded-[16px]" />
 
