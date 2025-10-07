@@ -26,17 +26,17 @@ const services = {
         {
             id: 1,
             title: "Solutions Provided by Wathayiq",
-            description: "Don’t start from scratch! Access a library of ready-made templates and documents built on solid foundations."
+            description: "Create tasks, set deadlines, and receive reminders to help you work efficiently."
         },
         {
             id: 2,
             title: "Legal Document Management",
-            description: "A system that helps you store and organize legal documents easily and securely."
+            description: "Create tasks, set deadlines, and receive reminders to help you work efficiently."
         },
         {
             id: 3,
             title: "Case Management",
-            description: "Track every case with its details and schedules all in one place without complexity."
+            description: "Create tasks, set deadlines, and receive reminders to help you work efficiently."
         },
         {
             id: 4,
