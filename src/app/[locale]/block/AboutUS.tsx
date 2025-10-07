@@ -78,7 +78,7 @@ export default function AboutUS({ locale, t }: { locale: string; t: (key: string
                                     <span
                                         className={`
                                             font-medium 
-                                            ${isArabic ? "text-[12px]" : " text-[14px]"} md:text-[20px] md:leading-[24px] 
+                                            ${isArabic ? "text-[14px]" : " text-[11px]"} md:text-[20px] md:leading-[24px] 
                                             text-[#364244]
                                         `}
                                     >
