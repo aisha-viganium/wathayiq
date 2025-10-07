@@ -50,11 +50,11 @@ export default function TrialVersion({ locale, t }: { locale: string; t: (key: s
                     <EditIcon color="#FFC681" className="w-[14px] h-[14px] md:w-[24px] md:h-[24px]" />
                   </div>
                   <span
-                    className="
+                    className={`
                               font-medium 
-                              text-[14px] md:text-[20px] md:leading-[24px] 
+                             ${isArabic ? "text-[14px]" : " text-[11px]"} md:text-[20px] md:leading-[24px] 
                               text-[#364244]
-                          "
+                          `}
                   >
                     {t("AboutPage.feature")}
                   </span>
