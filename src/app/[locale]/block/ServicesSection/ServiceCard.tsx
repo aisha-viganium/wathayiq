@@ -25,7 +25,7 @@ export default function ServiceCard({ service, isArabic }: Props) {
         <h5 className="font-saudi not-italic font-semibold text-[16px] md:text-[24px] md:leading-[36px] text-[#0D1B1E] mb-[10px] group-hover:text-[#14C4C7]">
           {service.title}
         </h5>
-        <p className="not-italic font-normal text-[12px] md:text-[16px] leading-[19px] text-[#364244] group-hover:text-[#F4FAFF]">
+        <p className="not-italic font-normal text-[12px] max-w-[218px] md:max-w-none md:text-[16px] leading-[19px] text-[#364244] group-hover:text-[#F4FAFF]">
           {service.description}
         </p>
       </div>

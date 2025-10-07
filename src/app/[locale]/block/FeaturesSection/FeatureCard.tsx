@@ -22,7 +22,7 @@ export default function FeatureCard({ feature, }: Props) {
         <h5 className="font-saudi not-italic font-semibold text-[16px] md:text-[24px] md:leading-[36px] text-[#F4FAFF] group-hover:text-[#0D1B1E] mb-[8px] md:mb-[16px]">
           {feature.title}
         </h5>
-        <p className="not-italic font-normal text-[12px] md:text-[16px] leading-[19px] text-[#F4FAFF] group-hover:text-[#4A4E4E] md:mb-[32px]">
+        <p className="not-italic font-normal text-[12px] md:text-[16px] md:leading-[19px] text-[#F4FAFF] group-hover:text-[#4A4E4E] md:mb-[32px]">
           {feature.description}
         </p>
       </div>

@@ -20,8 +20,8 @@ export default async function PackagesServer({
           {t("Packages.title")}
         </h2>
         <p
-          className="font-normal text-[12px] md:text-[24px] leading-[19px] md:leading-[29px]
-          text-center text-[#364244] max-w-[681px] mx-auto mt-[8px]"
+          className="font-normal max-w-[343px] text-[14px] md:text-[24px] leading-[19px] md:leading-[29px]
+          text-center text-[#364244] md:max-w-[681px] mx-auto mt-[8px]"
         >
           {t("Packages.subtitle")}
         </p>

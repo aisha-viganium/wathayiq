@@ -7,12 +7,12 @@ export const packagesData = {
       price: 80,
       yearlyPrice:100,
       features: [
-        "إدارة المستندات بسهولة",
-        "صلاحيات متعددة للمستخدمين",
-        "دعم فني على مدار الساعة",
-        "لوحة تحكم مخصصة",
-        "نسخ احتياطي تلقائي",
-        "تحديثات شهرية مجانية"
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
       ]
     },
     {
@@ -23,12 +23,12 @@ export const packagesData = {
       yearlyPrice:100,
 
       features: [
-        "فريق دعم مخصص",
-        "إمكانية دمج أنظمة خارجية",
-        "تقارير متقدمة",
-        "صلاحيات مرنة",
-        "سعة تخزين أكبر",
-        "أمان بيانات معزز"
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
       ]
     },
     {
@@ -39,12 +39,12 @@ export const packagesData = {
       yearlyPrice:100,
 
       features: [
-        "إدارة متقدمة للفرق",
-        "تكامل مع أدوات الذكاء الاصطناعي",
-        "إمكانيات تحليل شاملة",
-        "أولوية في الدعم الفني",
-        "خصومات على الخدمات الإضافية",
-        "تخصيص كامل للواجهة"
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
+        "مصممة للشركات الناشئة التي بدأت عملها حديثاً",
       ]
     }
   ],
@@ -59,11 +59,11 @@ export const packagesData = {
 
       features: [
         "Easy document management",
-        "Multiple user roles",
-        "24/7 technical support",
-        "Custom dashboard",
-        "Automatic backups",
-        "Monthly free updates"
+        "Easy document management",
+        "Easy document management",
+        "Easy document management",
+        "Easy document management",
+        "Easy document management",
       ]
     },
     {
@@ -74,12 +74,12 @@ export const packagesData = {
       yearlyPrice:100,
 
       features: [
-        "Dedicated support team",
-        "Integration with external systems",
-        "Advanced reports",
-        "Flexible permissions",
-        "Increased storage",
-        "Enhanced data security"
+        "Easy document management",
+        "Easy document management",
+        "Easy document management",
+        "Easy document management",
+        "Easy document management",
+        "Easy document management",
       ]
     },
     {
@@ -90,12 +90,12 @@ export const packagesData = {
       yearlyPrice:100,
 
       features: [
-        "Advanced team management",
-        "AI-powered integration",
-        "Comprehensive analytics",
-        "Priority customer support",
-        "Discounts on add-ons",
-        "Fully customizable interface"
+        "Easy document management",
+        "Easy document management",
+        "Easy document management",
+        "Easy document management",
+        "Easy document management",
+        "Easy document management",
       ]
     }
   ]

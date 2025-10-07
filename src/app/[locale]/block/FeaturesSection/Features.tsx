@@ -21,7 +21,7 @@ export default function Features({ locale, t }: { locale: string; t: (key: strin
           <h2 className="font-saudi font-bold text-[20px] md:text-[40px] md:leading-[60px] text-[#0D1B1E] text-center">
             {t("Features.title")}
           </h2>
-          <p className="font-normal text-[12px] md:text-[24px] leading-[19px] md:leading-[29px] text-center text-[#364244] max-w-[281px] md:max-w-[681px] mx-auto mt-[12px] md:mt-[16px]">
+          <p className="font-normal text-[14px] md:text-[24px] md:leading-[29px] text-center text-[#364244] max-w-[343px] md:max-w-[681px] mx-auto mt-[12px] md:mt-[16px]">
             {t("Features.subtitle")}
           </p>
         </AnimatedSection>

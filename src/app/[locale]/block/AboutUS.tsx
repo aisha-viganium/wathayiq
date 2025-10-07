@@ -53,7 +53,7 @@ export default function AboutUS({ locale, t }: { locale: string; t: (key: string
                             className={`
                                 max-w-[90%] 2xl:max-w-[635px]
                                 font-normal not-italic
-                                text-[16px] md:text-[18px] lg:text-[20px]
+                                text-[14px] md:text-[18px] lg:text-[20px]
                                 leading-[24px] md:leading-[26px] lg:leading-[28px]
                                 ${isArabic ? "text-right" : "text-left"}
                                 text-[#364244]

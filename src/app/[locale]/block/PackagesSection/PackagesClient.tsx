@@ -30,30 +30,32 @@ export default function PackagesClient({
     <div>
       <div className="flex justify-center mt-6">
         <div
-          className="relative w-[172px] h-[39px] bg-[#283F3E] rounded-[4px] p-[2px] cursor-pointer flex items-center justify-between px-[8px]"
+          className="relative w-[145px]  md:w-[172px] h-[39px] bg-[#283F3E] rounded-[4px] p-[2px] cursor-pointer flex items-center justify-between"
           onClick={handleToggle}
         >
           <motion.div
             layout
             transition={{ type: "spring", stiffness: 400, damping: 30 }}
-            className="absolute top-[4px] w-[77px] h-[31px] rounded-[4px] bg-white z-10"
+            className="absolute top-[4px] w-[64px] md:w-[77px] h-[31px] rounded-[4px] bg-white z-10"
             style={{
-              left: planType === "monthly" ? 6 : 89,
+              left: planType === "monthly"
+                ? 4
+                : typeof window !== "undefined" && window.innerWidth < 768
+                  ? 76
+                  : 91,
             }}
           ></motion.div>
 
-          <div className="flex justify-between w-full z-20 relative px-[10px]">
+          <div className="flex justify-center gap-[34px] md:gap-[54px] w-full z-20 relative">
             <span
-              className={`text-[16px] font-[Tajawal] font-semibold ${
-                isArabic ? planType === "monthly" ? "text-white" : "text-[#283F3E]" :planType === "monthly" ? "text-[#283F3E]" : "text-white"
-              }`}
+              className={`text-[14px] md:text-[16px] font-[Tajawal] font-normal  ${isArabic ? planType === "monthly" ? "text-white" : "text-[#283F3E]" : planType === "monthly" ? "text-[#283F3E]" : "text-white"
+                }`}
             >
               {isArabic ? "شهري" : "Monthly"}
             </span>
             <span
-              className={`text-[16px] font-[Tajawal] font-semibold ${
-               isArabic ? planType === "yearly" ? "text-white" : "text-[#283F3E]":planType === "yearly" ? "text-[#283F3E]" : "text-white"
-              }`}
+              className={`text-[14px] md:text-[16px] font-[Tajawal] font-normal  ${isArabic ? planType === "yearly" ? "text-white" : "text-[#283F3E]" : planType === "yearly" ? "text-[#283F3E]" : "text-white"
+                }`}
             >
               {isArabic ? "سنوي" : "Yearly"}
             </span>
