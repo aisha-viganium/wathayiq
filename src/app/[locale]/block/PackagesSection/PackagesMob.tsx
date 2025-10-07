@@ -19,7 +19,7 @@ export default function PackagesMob({ planType = "monthly" }: PackagesMobProps) 
     <Swiper
       modules={[Autoplay]}
       spaceBetween={16}
-      slidesPerView={1.3}
+      slidesPerView={1.1}
       loop
       autoplay={{ delay: 2500, disableOnInteraction: false }}
     >
